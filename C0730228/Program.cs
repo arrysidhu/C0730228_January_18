@@ -4,22 +4,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace C0730228
+namespace C0730228Arshdeepsinghbrar
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(1 + 1);
-            int i = 1;
+            StudentInformation _Mary = new StudentInformation("Marry", 3.8, 20);
+            StudentInformation _John = new StudentInformation("John", 3.8, 20);
+            StudentInformation _Mark = new StudentInformation("Mark", 3.8, 20);
+            StudentInformation _Steve = new StudentInformation("Steve", 3.8, 20);
+            StudentInformation _Cindy = new StudentInformation("Cindy", 3.8, 20);
         }
     }
-
-    class Peanut
+    class StudentInformation
     {
-        public peanut(string noise)
+        string Name;
+        double GPA;
+        int Attendance;
+        public StudentInformation(string aName, double cGPA, int dAttendance)
         {
-            Console.WriteLine(noise);
+            Name = aName;
+            GPA = cGPA;
+            Attendance = dAttendance;
         }
     }
 }
